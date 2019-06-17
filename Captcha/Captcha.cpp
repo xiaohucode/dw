@@ -96,8 +96,7 @@ bool Hook_GetCaptchaForGame()
 		PDWORD CaptchaLen
 		)->BOOL
 	{
-		//禁用安全检查 (/GS-).导致ecx不正确进函数会崩 2019/6/16
-
+		
 		BOOL result = GetCaptchaForGame_(UserID, flags, pUnknown, CaptchaData, CaptchaLen);
 		 
 		if (result)		{
